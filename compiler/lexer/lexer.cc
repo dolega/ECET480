@@ -232,6 +232,10 @@ void Lexer::parseLine(std::string &line)
             // FIXME: create token object 
             // Token type is TOKEN_IDENTIFIER
             // Push token object into queue 
+            Token::TokenType type = Token::TokenType::TOKEN_IDENTIFIER;
+            Token _tok(type, cur_token_str, cur_line);
+
+            toks_per_line.push(_tok);
         }
     }
 }
