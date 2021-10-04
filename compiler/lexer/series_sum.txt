@@ -1,0 +1,25 @@
+// Series sum 
+// Author: Naga Kandasamy
+// Date: 21 September, 2021
+
+int series_sum(int n)
+{
+    int sum = 0;
+    int len = n + 1;
+
+    for (int i = 1; i < len; i = i + 1) {
+        sum = sum + i;
+    }
+
+    return sum;
+}
+
+int main()
+{
+    int n = 10;
+    
+    int sum = series_sum(n);
+    printVarInt(sum);
+
+    return 0;
+}
