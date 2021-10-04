@@ -73,7 +73,9 @@ struct Token {
         // else - indicates the token "else"
         TOKEN_ELSE,
         // for - indicates the token is "for"
-        TOKEN_FOR
+        TOKEN_FOR,
+        // while - indicates the token is "while"
+        TOKEN_WHILE
     } type = TokenType::TOKEN_ILLEGAL;
 
     // Literal - container of the token value

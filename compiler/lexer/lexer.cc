@@ -117,9 +117,13 @@ Lexer::Lexer(const char* fn)
 
     // FIXME: insert the "if", "else", "for", and "while" keywords into the map
     // String "if" must be assigned a token type of TOKEN_IF
+    keywords.insert({"if", Token::TokenType::TOKEN_IF});
     // String "else" must be assigned a token type of TOKEN_ELSE
-    // String "for" must be assigned a token type of TOKEN_FOR 
+    keywords.insert({"else", Token::TokenType::TOKEN_ELSE});
+    // String "for" must be assigned a token type of TOKEN_FOR
+    keywords.insert({"for", Token::TokenType::TOKEN_FOR});
     // String "while" must be assigned a token type of TOKEN_WHILE
+    keywords.insert({"while", Token::TokenType::TOKEN_WHILE});
 }
 
 // Return a token 
