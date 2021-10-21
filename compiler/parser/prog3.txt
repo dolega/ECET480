@@ -1,0 +1,25 @@
+// Evaluation of expressions with unary operators 
+// Author: Naga Kandasamy 
+
+int expr0(int x, int y)
+{
+    int a;
+    int b;
+
+    a = 4*x + (x - y)*(x + y);
+    b = (x - y) + (x + y);
+    return a + b;
+}
+
+
+int main()
+{
+    int z;
+    int x = 1;
+    int y = 5;
+    
+    z = expr0(x, y);
+    printVarInt(z);
+
+    return 0;
+}
